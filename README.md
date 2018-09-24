@@ -11,4 +11,4 @@ A UI Function that allows users to define 'tags'.
 Before running this app, please goto the folder and type <code>npm i</code> in terminal
 
 
-Then type <code>npm run dev</code> to run it
+Then type <code>npm start</code> to run it
