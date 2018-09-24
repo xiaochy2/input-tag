@@ -5,12 +5,12 @@ import './index.css';
 // for hackerrank does not support JSX or react, I run my code in my local IDE and it works well
 
 class App extends Component {
-  constructor(props){
-      super(props);
-      this.state = {
-        tags: ["dog", "cat"],
-        inputValue: ''
-      }
+  constructor(props) {
+    super(props);
+    this.state = {
+      tags: ["dog", "cat"],
+      inputValue: ''
+    }
   }
 
   handleChange = (e) => {
@@ -28,7 +28,7 @@ class App extends Component {
           inputValue: ''
         });
       }
-    } else if (e.keyCode === 8 && this.state.inputValue === '') {  
+    } else if (e.keyCode === 8 && this.state.inputValue === '') {
       //keyCode of Macbook 'delete' button is 8
       let temp = [...this.state.tags];
       temp.pop();
@@ -52,11 +52,13 @@ class App extends Component {
             <Tag name={item} id={index} delete={this.delete} />
           ))}
         </div>
-        <input type="text" 
-            value={this.state.inputValue} 
-            onChange={this.handleChange} 
-            onKeyDown={this.handleSubmit} 
-        />
+        <div className="input-container">
+          <input type="text"
+            value={this.state.inputValue}
+            onChange={this.handleChange}
+            onKeyDown={this.handleSubmit}
+          />
+        </div>
       </div>
     );
   }

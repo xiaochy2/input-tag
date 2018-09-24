@@ -1,41 +1,46 @@
 .app {
-  margin:0.25em;
+  margin:20px;
   padding-right:2px;
-  border-left:1px solid black;
 }
 
 .tag-container{
   display: inline-block;
-  border: 1px solid black;
-  border-right: none;
-  border-left: none;
+  border-bottom: 1px solid black;
+}
+
+.tag-container::after{
+  content:"";
+  width:8em;
+  display: inline-block;
 }
 
 .tag-single{
   display: inline-block;
+  background-color: lightblue;
+  margin:0.25em;
+  padding:0.25em;
 }
 
 .tag-name {
-  font-size: 85%;
-  padding: 0.5em 0 0.5em 0.75em;
-  margin: 0.25em 0 0.25em 0.25em;
   display: inline-block;
-  background-color: lightblue;
 }
 .tag-del{
-  font-size: 85%;
-  padding: 0.5em 0.5em;
-  margin-right: 0.25em;
+  margin-left:0.25em;
   display: inline-block;
-  background-color: lightblue;
   cursor: pointer;
 }
-
+.input-container{
+  display:inline-block;
+  position: relative;
+  border:1px solid black;
+}
 input:focus{
   outline:none;
 }
 input{
-  padding: 1em;
-  border:1px solid black;
-  border-left:none;
+  position: absolute;
+  left:-7.5em;
+  top:-1.5em;
+  border:none;
+  padding:0.5em;
 }
