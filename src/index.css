@@ -39,7 +39,7 @@ input:focus{
 }
 input{
   position: absolute;
-  left:-7.5em;
+  left:-12em;
   top:-1.5em;
   border:none;
   padding:0.5em;
